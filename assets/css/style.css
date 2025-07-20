@@ -53,7 +53,8 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-  max-height: 400px;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }
 
 .hero-video {
