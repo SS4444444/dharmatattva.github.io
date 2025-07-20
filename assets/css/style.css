@@ -20,7 +20,7 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
   nav a { margin: 5px 0; }
 }
 
-/* Horizontal Scrollable Navigation (Mobile) */
+/* Horizontal Scrollable Navigation (Below Heading on Mobile) */
 .nav-scrollable {
   overflow-x: auto;
   white-space: nowrap;
@@ -47,4 +47,3 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
 .nav-scrollable a:hover {
   color: orange;
 }
-
