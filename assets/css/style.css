@@ -47,3 +47,19 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
 .nav-scrollable a:hover {
   color: orange;
 }
+/* Hero video styling */
+.hero-video-container {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  max-height: 400px;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #333;
+}
