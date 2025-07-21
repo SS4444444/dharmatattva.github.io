@@ -24,7 +24,7 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
 .nav-scrollable {
   overflow-x: auto;
   white-space: nowrap;
-  background-color: #111;
+  background-color: #000;
   padding: 10px 0;
   border-bottom: 1px solid #333;
 }
