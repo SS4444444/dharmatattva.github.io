@@ -33,6 +33,10 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="stylesheet" href="assets/css/style.css">
 
+<footer>
+  <p>&copy; 2025 Dharma Tatva. All rights reserved.</p>
+</footer>
+
 <script>
   const text = "Dharma Tatva — Explore. Question. Act.";
   let index = 0;
@@ -49,6 +53,10 @@
 
   function handleScroll() {
     const hero = document.getElementById("hero");
+    if (!hero) {
+      typeText(); // fallback if #hero not found
+      return;
+    }
     const heroTop = hero.getBoundingClientRect().top;
     if (heroTop < window.innerHeight && !hasTyped) {
       hasTyped = true;
@@ -58,7 +66,6 @@
 
   window.addEventListener("scroll", handleScroll);
 </script>
-
 <body>
 <header class="site-header">
   <div class="logo-container">
