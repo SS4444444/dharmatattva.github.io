@@ -87,3 +87,13 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
   color: #ff9900;
 }
 
+.typing-text::after {
+  content: '|';
+  animation: blink 0.8s infinite;
+  color: #ff9900;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
