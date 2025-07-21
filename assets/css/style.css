@@ -64,3 +64,22 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
   display: block;
   border-bottom: 1px solid #333;
 }
+
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #000; /* Or match your site's theme */
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
