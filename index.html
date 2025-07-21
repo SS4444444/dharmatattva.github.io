@@ -33,39 +33,7 @@
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="stylesheet" href="assets/css/style.css">
 
-<footer>
-  <p>&copy; 2025 Dharma Tatva. All rights reserved.</p>
-</footer>
 
-<script>
-  const text = "Dharma Tatva — Explore. Question. Act.";
-  let index = 0;
-  let hasTyped = false;
-
-  function typeText() {
-    const element = document.getElementById("typing-text");
-    if (index < text.length) {
-      element.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeText, 50);
-    }
-  }
-
-  function handleScroll() {
-    const hero = document.getElementById("hero");
-    if (!hero) {
-      typeText(); // fallback if #hero not found
-      return;
-    }
-    const heroTop = hero.getBoundingClientRect().top;
-    if (heroTop < window.innerHeight && !hasTyped) {
-      hasTyped = true;
-      typeText();
-    }
-  }
-
-  window.addEventListener("scroll", handleScroll);
-</script>
 <body>
 <header class="site-header">
   <div class="logo-container">
@@ -90,7 +58,6 @@
   </video>
 </div>
   <section class="hero">
-    <h1><span id="typing-text"></span><span class="cursor">|</span></h1>
     <h1>Explore Knowledge Beyond Borders</h1>
     <p>Dharma Tatva is a platform for deep ideas, fearless conversations, and rational thinking across politics, history, science, and belief systems.</p>
   </section>
