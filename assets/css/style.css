@@ -5,7 +5,7 @@ header { display: flex; justify-content: space-between; align-items: center; bac
 .logo { font-size: 1.8rem; font-weight: bold; color: #ff9900; }
 nav a { color: #f5f5f5; margin: 0 10px; text-decoration: none; font-weight: 500; }
 nav a:hover { color: #ff9900; }
-.hero { text-align: center; padding: 100px 20px 40px; background: #000; }
+.hero { padding-top: 80px; text-align: center; padding: 100px 20px 40px; background: #000; }
 .hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
 .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto; }
 .cta { text-align: center; margin-top: 30px; }
@@ -22,6 +22,11 @@ footer { background: #1a1a1a; text-align: center; padding: 20px; font-size: 0.9r
 
 /* Horizontal Scrollable Navigation (Below Heading on Mobile) */
 .nav-scrollable {
+  position: fixed;
+  top: 70px; /* adjust if your header height is different */
+  left: 0;
+  width: 100%;
+  z-index: 999;
   overflow-x: auto;
   white-space: nowrap;
   background-color: #000;
